@@ -1,0 +1,17 @@
+Exercice 1: Installation
+Exercice 2:
+cau 1:mongod
+cau 2: mongo
+cau 3: show dbs
+cau 4: use vp18db
+cau 5: db.student.insertOne({name: 'Trung', studentID: '18126035'})
+db.student.insertOne({name: 'Sang', studentID: '18126029'})
+cau 6: db.student.find()
+cau 7: db.student.find({studentID: '18126035'})
+cau 8: db.student.deleteOne({studentID: '18126029'})
+cau 9: db.student.find()
+cau 10: db.student.insertOne({name: 'Nhan', studentID: '18126006', dateOfBirth: '2/2/2000', class: '18VP'})
+db.student.insertOne({name: 'Khan', studentID: '18126015', dateOfBirth: '22/2/2000', class: '18VP'})
+cau 11: db.student.update({"_id" :studentID("18126035")}, {$set : {"DateOfBirth":"2/6/1999", "class": "18VP"}})
+cau 12: db.student.find()
+cau 13: 
