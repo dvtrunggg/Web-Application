@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script2.js"></script>
+    <style>
+        #div1{
+            background-color: blanchedalmond;
+            font-weight: bold;
+            color: chocolate;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body onload="Load()">
+    <h1>Hello</h1>
+    <div id="div1">
+        <p id="p1">Đây là p1</p>
+    </div>
+    <div onclick="this.innerHTML = 'oop'">AVC</div>
+    <div onclick="change(this)">HAHA</div>
+    <div id="div3">123</div>
+
+    
+    <script>
+        function change(id){
+            id.innerHTML='ABC'
+        }
+        obj=document.getElementById('div3').addEventListener('click', function(){ alert('sdfcs');});
+    </script>
+</body>
+</html>

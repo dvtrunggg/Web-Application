@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Information</title>
+  <link rel="icon" href="image/logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style_ipad/buy-ipad-air-style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style_admin/style_inf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+       <!-- site menu -->
+        <div class="site-menu">
+            <!-- apple menu -->
+            <div class="apple-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/"><img class="logo" src="/images/img_ipad/img_inter/apple-xxl.png" ></a>
+                        </li>
+                   
+                    </ul>
+                </nav>
+            </div>          
+        </div>
+
+    
+
+  <div class="container" id="body" style="padding-top: 30px; ">
+    <div class="wrap-content">
+        <h3 style="text-align: center;">Invoice Information</h3>
+        <div class="content1">
+            <div class="bill">
+                <div class="payer">
+                    <ul class="bill_detail" style="margin-bottom: 50px;">
+                        <li id="bill_name" style="padding-bottom: 10px;">
+                            ID : <strong>{{bill._id}}</strong>
+                        </li>
+
+                        <li id="bill_name" style="padding-bottom: 10px;">
+                            Name: <strong>{{bill.firstName}} {{bill.lastName}}</strong>
+                        </li>
+                        
+                        <li id="bill_phone" style="padding-bottom: 10px;">
+                            Number Phone: <strong>{{bill.phone}}</strong>
+                        </li>
+                        <li id="bill_phone" style="padding-bottom: 10px;">
+                            Email: <strong>{{bill.email}}</strong>
+                        </li>
+                        <li id="bill_address" style="padding-bottom: 10px;">
+                            Adress: <strong>{{bill.address}}</strong>
+                        </li>
+                        <li id="bill_total" style="padding-bottom: 10px;">
+                           Total: <strong style="color:red">${{bill.total}}</strong>
+                        </li>
+                        
+                    </ul>
+
+                    {{!-- ------------------- --}}
+
+                    {{!-- --------------- --}}
+
+
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Product Name</th>
+      <th scope="col">Image</th>
+      <th scope="col">Inch</th>
+      <th scope="col">Ram</th>
+      <th scope="col">Rom</th>
+      <th scope="col">Graphic</th>
+      <th scope="col">Connect</th>
+      <th scope="col">Case Size (Apple Watch)</th>
+      <th scope="col">Band Size (Appla Watch)</th>  
+      <th scope="col">Quantity in stock</th>
+      <th scope="col">Price</th>
+      
+
+    </tr>
+  </thead>
+  <tbody>
+      {{#each bill.product }}
+        <tr>          
+            <td><b>{{this.name}}</b></td>
+            <td><img src="{{this.image}}" width="130px"></td>
+            <td>{{this.inch}}</td>
+            <td>{{this.ram}}</td>
+            <td>{{this.rom}}</td>
+            <td>{{this.graphic}}</td>
+            <td>{{this.connect}} {{this.more}}</td>
+            <td>{{this.case_size}}</td>
+            <td>{{this.band_size}}</td>
+            <td>{{this.count}}</td>
+            <td style="color: red;">{{this.price}}</td>            
+        </tr>
+        {{/each}}
+  </tbody>
+</table>
+                </div>
+            </div>
+            </div>
+
+        <div class="functions">
+            <form action="/detail/{{bill._id}}" method="POST">
+                <input type="radio" name="status" value="Confirm" checked="true"> <span>Confirm</span> 
+                <input type="radio" name="status" value="Shipping"> <span>Shipping</span> 
+                <input type="radio" name="status" value="Received"> <span>Received</span> 
+                <input type="radio" name="status" value="Canceled"> <span>Canceled</span>
+                <button type="submit" style="margin-left: 15px;" class="btn btn-secondary btn-sm">Submit</button>
+            </form>
+            
+            <button onclick="window.print()" class="btn btn-primary btn-lg" style="margin-top: 20px; margin-left: 50%">In đơn hàng</button>
+
+
+
+
+        </div>
+
+    </div>
+  </div>
+  
+  <div class="container" id="footer" style="margin-bottom: 30px;">
+    {{!-- <p style="text-align: center;">&#169; 2020</p>  --}}
+  </div>
+
+  <script src="js/detail.js" type="text/javascript"></script>
+  <script src="js/promotion_detail.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+{{!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông tin chi tiết hóa đơn</title>
+  <link rel="icon" href="image/logo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/bill.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="header">
+    <nav id="nav_bar" class="navbar navbar-expand-lg navbar-light">
+        <div class="wrapHead">
+            <a class="navbar-brand" id="logo" href="acceuil.html">
+                <img id="kdm" src="image/KDM.png">
+            </a>
+            <p id="admin">Hello, admin!</p>
+            <a href="" id="btn-logout">Logout</a>
+        </div>
+    </nav>
+  </div>
+
+  <div class="container" id="body">
+    <div class="wrap-content">
+        <h3 style="text-align: center;">Thông tin chi tiết hóa đơn</h3>
+        <div class="content1">
+            <div class="bill">
+                <div class="payer">
+                    <ul class="bill_detail">
+                        <li id="bill_name">
+                            Mã đơn hàng: <br><strong>{{bill._id}}</strong>
+                        </li>
+
+                        <li id="bill_name">
+                            Name: <br><strong>{{bill.firstName}} {{bill.lastName}}</strong>
+                        </li>
+                        
+                        <li id="bill_phone">
+                            Số điện thoại: <br><strong>{{bill.phone}}</strong>
+                        </li>
+                        <li id="bill_phone">
+                            Email: <br><strong>{{bill.email}}</strong>
+                        </li>
+                        <li id="bill_address">
+                            Địa chỉ: <br><strong>{{bill.address}}</strong>
+                        </li>
+                        <li id="bill_total">
+                           Tổng cộng: <br><strong style="color:red">{{bill.total}}</strong>
+                        </li>
+                        
+                    </ul>
+                    <div class="order_details">
+                        <table class="_order_details">
+                            <thead style="background-color:whitesmoke">
+                                <tr>
+                                    <th class="product_name">Sản phẩm</th>
+                                    <th class="product total">Tổng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="order_items">
+                                    <td class="product_name">
+                                        <a href="#" style="color:black">Samsung galaxy Note20</a>
+                                        <strong>x 1</strong>
+                                        <br>
+                                       <span style="font-weight: 600;">Màu sắc:</span> grey
+                                    </td>
+                                    <td class="price" style="color:red">23,900,000₫</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Giao nhận hàng</th>
+                                    <td>Miễn phí giao hàng</td>
+                                </tr>
+                                <tr>
+                                    <th>Tổng cộng:</th>
+                                    <td style="color:red">69,000,000₫</td>
+                                </tr>
+                                <tr>
+                                    <th>Lưu ý:</th>
+                                    <td>Không có</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <div class="functions">
+            <form action="/detail/{{bill._id}}" method="POST">
+                <input type="radio" name="status" value="confirm" checked="true"> <span>Xác nhận đơn hàng</span> 
+                <input type="radio" name="status" value="shipping"> <span>Đang giao hàng</span> 
+                <input type="radio" name="status" value="received"> <span>Đã nhận hàng</span> 
+                <input type="radio" name="status" value="canceled"> <span>Hủy đơn hàng</span>
+                <button type="submit">Submit</button>
+            </form>
+            
+            <button onclick='window.print()'>In đơn hàng</button>
+        </div>
+
+    </div>
+  </div>
+  
+  <div class="container" id="footer">
+    <p style="text-align: center;">&#169; By KD Mobile, 2020</p> 
+  </div>
+
+  <script src="js/detail.js" type="text/javascript"></script>
+  <script src="js/promotion_detail.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>  --}}

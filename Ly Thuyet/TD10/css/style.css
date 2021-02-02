@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+    border: black 1px solid;
+    width: fit-content;
+    padding: 2em 2em 2em 2em;
+}
+#error{
+    color: red;
+    font-style: italic;
+    padding-left: 120px;
+}

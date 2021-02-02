@@ -1,0 +1,10 @@
+var a = prompt("Entrez numéro a: " );
+var b = prompt("Entrez numéro b: ");
+var tong = (+a) + (+b);
+var hieu = a - b;
+var tich = a * b;
+var thuong = a / b;
+alert(a + " + " + b + " = " + tong);
+alert(a + " - " + b + " = " + hieu);
+alert(a + " * " + b + " = " + tich);
+alert(a + " / " + b + " = " + thuong);

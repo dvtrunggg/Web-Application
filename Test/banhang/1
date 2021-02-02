@@ -1,0 +1,36 @@
+new Product({
+    name : 'mac pro 16',
+    cpu: 'i7',
+    color: 'silver',
+    ram: '8GB',
+    count: 50 , rom : '256GB',
+  graphic : 'amd radeon pro 5500m with 4gb of gddr6 memory storage',
+
+    price : 1700  ,  
+image : '/images/img_mac/img-mac-pro16/macbook-pro-16-space-gray.jpg'
+}),
+
+new Product({
+    name : 'mac pro 16',
+    cpu: 'i7',
+    color: 'silver',
+    ram: '8GB',
+    count: 50 , rom : '256GB',
+  graphic : 'amd radeon pro 5500m with 8gb of gddr6 memory',
+
+    price : 1700  ,  
+image : '/images/img_mac/img-mac-pro16/macbook-pro-16-space-gray.jpg'
+}),
+
+new Product({
+    name : 'mac pro 16',
+    cpu: 'i7',
+    color: 'silver',
+    ram: '8GB',
+    count: 50 , rom : '256GB',
+  graphic : 'amd radeon pro 5600m with 8gb of hbm2 memory',
+
+    price : 1700  ,  
+image : '/images/img_mac/img-mac-pro16/macbook-pro-16-space-gray.jpg'
+}),
+

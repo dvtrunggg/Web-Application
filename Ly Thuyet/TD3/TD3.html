@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD3</title>
+</head>
+<body>
+    <h1>Blackstone Bistro | Pizza-on-Demain</h1>
+    <p>Our 12<sup>n</sup> wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it <br/>within an hour.</p>
+    <form>
+        <fieldset>
+            <legend>Information</legend>
+            <dd><label>Name: <input type="text" name="Name"></label></dd>
+            <dd><label>Adress: <input type = "text" name="Adress"></label></dd>
+            <dd><label>Telephone Number: <input type="tel" name="Telephone Number"></label></dd>
+            <dd><label>Email: <input type="email" name = "Email"></label></dd>
+            <dd>
+                <label>Delivery instructions:
+                <textarea name="Delivery instructions" cols="25" rows="2"></textarea></label>
+            </dd>
+        </fieldset>
+        <h2>Design Your Dream Pizza:</h2>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Pizza specs</legend>
+            <p><dt>Crust <i>(Choose one)</i></dt></p>
+            <dd><input type="radio" name = "Crust" value = "Classic white" checked>Classic white</dd>
+            <dd><input type="radio" name = "Crust" value = "Multigrain">Multigrain</dd>
+            <dd><input type="radio" name = "Crust" value = "Cheese-stuffed crust">Cheese-stuffed crust</dd>
+            <dd><input type="radio" name = "Crust" value = "Gluten-free">Gluten-free</dd>
+            
+            <p><dt>Toppings <i>(Choose as many as you want):</i></dt></p>
+            <dd><input type="checkbox" name="Topping1" value="Topping1" checked>
+            <label for = "Topping1" >Red Sauce</label></dd>
+            <dd><input type="checkbox" name="Topping2" value="Topping2">
+            <label for = "Topping2" >White Sauce</label></dd>
+            <dd><input type="checkbox" name="Topping3" value="Topping3">
+            <label for = "Topping3" >Mozzarella Chesse</label></dd>
+            <dd><input type="checkbox" name="Topping4" value="Topping4">
+            <label for = "Topping4" >Pepperoni</label></dd>
+            <dd><input type="checkbox" name="Topping5" value="Topping5">
+            <label for = "Topping5" >Mushrooms</label></dd>
+            <dd><input type="checkbox" name="Topping6" value="Topping6">
+            <label for = "Topping6" >Peppers</label></dd>
+            <dd><input type="checkbox" name="Topping7" value="Topping7">
+            <label for = "Topping7" >Anchovies</label></dd>
+        </fieldset>
+    <form>
+        <fieldset>
+            <legend>Number</legend>
+            <input type="number" name="number" maxlength="6" size="2"><br/><br/>
+            <input type="submit" value="Bring me a pizza!">
+            <input type="reset">
+        </fieldset>
+    </form>
+    </form>
+</body>

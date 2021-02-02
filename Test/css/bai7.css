@@ -1,0 +1,27 @@
+
+body{
+    margin: 0;
+}
+#margin1 {
+    font: bold;
+    color: white;
+    background-color: tomato;
+    width: 200px;
+    height: 200px;
+   
+    font-size: 54px; 
+    padding-left: 50px 50px ;
+}
+
+#margin2 {
+    font: bold;
+    font-size: 54px;
+    background-color: turquoise;
+    width: 200px;
+    height: 200px;
+    margin-top: 00px;
+    opacity: 90%;
+}
+p span{
+    font: italic;
+}

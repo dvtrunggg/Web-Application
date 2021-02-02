@@ -1,0 +1,29 @@
+body{
+
+
+    
+}
+#container{
+    width: 990px;
+    min-height: 300px;
+    background-color: teal;
+}
+#header{
+    height: 150px;
+    background-color: yellow;
+}
+#left-sidebar, #right-sidebar{
+    width: 200px;
+    min-height: 300px;
+    background-color: violet;
+
+}
+#content{
+    width: 590px; 
+    min-height: 400px;
+    background-color: black;
+
+}
+#footer{
+    height: 40px;
+}

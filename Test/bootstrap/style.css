@@ -1,0 +1,14 @@
+.container
+{
+    border: 1px red solid;
+   
+    
+.col-md-1 , .col-sm-1{
+    border: 1px blue solid;
+}
+.container-fluid{
+    background-color: hotpink;
+}
+.abc{
+    height: 200px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD10</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="dictionary.json"></script>
+</head>
+<body>
+    <div class="container">
+    
+        <h1>English dictionary</h1>
+        <p>
+            Look up a word: 
+           <input type="text" id="input" onkeydown="Search()"/> <button id="button_search" type="submit" value="Search" onclick="Search()">Search</button>
+            <div id="error"></div>
+        </p>
+            
+        <hr/>
+        <dt>The definition <b id="key"></b> is: </dt>
+        <dd><p id="def"></p></dd>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

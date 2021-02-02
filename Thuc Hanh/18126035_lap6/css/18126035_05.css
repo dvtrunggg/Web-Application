@@ -1,0 +1,79 @@
+
+body{
+    margin: 0px; 
+    padding: 0;
+    background-color: rgb(246,246,246);
+
+}
+#container{
+    margin: auto; 
+    /* min-height: 700px; */
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: auto;
+    width: 990px;
+}
+div.box{
+    margin-top: 30px;
+}
+div.box img{
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+}
+.clear{
+    clear: both;
+}
+#header{
+    background-color: rgb(246,246,246);
+    height: 20px;
+
+}
+
+div#form{
+    background-color: rgb(241,241,241);
+    margin: 30px 30px;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+}
+a{
+    text-decoration: none;
+}
+#important{
+    color: red;
+}
+
+div#form h2{
+    /* border-bottom-width: 75%; */
+    border-bottom: gray solid 0.9px ;
+}
+div#form input {
+    width: 100%;
+    height: 1.5em;
+}
+
+div#check{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+div#check2{
+    margin-top: 3px;
+}
+div#submit input{
+    margin-top: 15px;
+    padding: auto;
+    border: none; 
+    background-color: rgb(236, 98, 98);
+    /* border: 1px rgb(247, 69, 69) solid; */
+    color: white;
+    width: 8em;
+    height: 1.5em;
+    font-size: 1.5em;
+    float: right;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+#userName{
+    background-color: rgb(241, 209, 214);
+}

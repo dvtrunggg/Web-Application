@@ -1,0 +1,17 @@
+.space{
+    background-color: rgb(245, 245, 245);
+
+}
+.space1{
+    margin-left: 30px;
+    margin-right: -40px;
+}
+.space2{
+    margin-left: 0px;
+    padding-left: 0;
+
+}
+.space3{
+    /* background-color: chartreuse; */
+    padding-left: 5px;
+}

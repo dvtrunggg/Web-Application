@@ -1,0 +1,23 @@
+.container{
+    background-color: teal;
+    color: thistle;
+}
+
+.container > div > div{
+    background-color: khaki;
+    border: 1px solid red;
+
+}
+
+.item-1{
+    background-color: tomato;
+    color: orange;
+}
+.item-2{
+    background-color: thistle;
+    color: brown;
+}
+.item-3{
+    background-color: blanchedalmond;
+    color: chocolate;
+}

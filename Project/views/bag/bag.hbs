@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Apple</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style_bag/bag.css">
+    </head>
+    <body>
+        <!-- site menu -->
+        <div class="site-menu">
+            <!-- apple menu -->
+            <div class="apple-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/" class="logo-active"><img class="logo" src="/images/img_index/apple-xxl.png" ></a>
+                        </li>
+                        <li><a href="/sheet/mac">Mac</a></li>
+                        <li><a href="/sheet/ipad">iPad</a></li>
+                        <li><a href="/sheet/iphone">iPhone</a></li>
+                        <li><a href="/sheet/watch">Watch</a></li>
+                        <li>
+                            <a href="#"><img class="img-fluid search-icon" src="/images/img_index/search.png"></a>
+                        </li>
+                        <li>
+                            <a href="/bag"><img class="img-fluid bag-icon" src="/images/img_index/bag.png"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="note text-center">
+            Shop online and get free, no‑contact delivery, Specialist help, and more.
+        </div>
+
+        <!-- content -->
+        
+        <div class="container-fluid">
+        <!--container-->
+            {{!-- <div class="d-flex align-content-between flex-wrap justify-content-center" id="display-item"></div> --}}
+            <!---->
+
+            {{!-- <div id="layout-getinfo" class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-light " id="button-get-info">Mua ngay</button>
+            </div> --}}
+
+            <!---->
+            
+
+        <!--container-->
+        </div>
+
+        <!-- content -->
+          
+        
+        <!-- site footer-->
+        <div class="site-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        Copyright © 2020 Apple Inc. All rights reserved.
+                    </div>
+                    <div class="col-md-6 text-right">
+                        VietNam
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!--form-->
+      
+      <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Fill in information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <!---->
+
+        <form class="needs-validation container" novalidate id="form" >
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom01">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" required>
+            <div class="invalid-feedback">
+                Please enter your first name
+            </div>
+            <div class="valid-feedback">
+              <!-- Looks good! -->
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" required >
+            <div class="invalid-feedback">
+                Please enter your last name
+            </div>
+            <div class="valid-feedback">
+              <!-- Looks good! -->
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-row">
+            <div class="col-md-10 mb-3">
+                <label for="validationCustom03">Number Phone</label>
+                <input type="tel" class="form-control" id="validationCustom03" required >
+                <div class="invalid-feedback">
+                    Please enter your number phone
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationCustom03">Email</label>
+            <input type="mail" class="form-control adress" id="validationCustom04" required>
+            <div class="invalid-feedback">
+                Please enter your email
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationCustom03">Address</label>
+            <input type="text" class="form-control adress" id="validationCustom05" required>
+            <div class="invalid-feedback">
+                Please enter your address
+            </div>
+          </div>
+          
+        </div>
+       
+        <!-- <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div> -->
+        
+        <button class="btn btn-primary" type="submit" id="submit">Confirm</button>
+        {{!-- <div class="btn btn-primary"  id="submit">Confirm</div> --}}
+
+      </form>
+
+      <!---->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        {{!-- <button type="button" class="btn btn-primary">Understood</button> --}}
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!--form-->
+        
+
+        <!-- bag.js -->
+        <script src="/javascripts/script_bag/bag.js"></script>
+        <script src="/javascripts/script_bag/form_bag.js"></script>
+
+        <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+    
+    </body>
+</html>

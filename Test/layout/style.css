@@ -1,0 +1,62 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    /* background-color: red; */
+    width: 990px;
+    min-height: 350px;
+    height: auto;
+    margin: 0 auto;     /*cái này sẽ khiến cái khung container nó ra giữa màn hình*/
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: "h h h"
+    "m m m"
+    "l c r"
+    "f f f";
+}
+
+#header{
+    background-color: aqua;
+    /* width: 990px; */
+    height: 100px;
+    grid-area: h;
+}
+#menu{
+    background-color: blueviolet;
+    height: 100px;
+    grid-area: m;
+}
+#left{
+    background-color: teal;
+    /* width: 15%; */
+    height: 300px;
+    grid-area: l;
+    /* float: left; */
+}
+
+#content{
+    background-color: wheat;
+    /* width: 70%; */
+    height: 300px;
+    grid-area: c;
+    /* float: left; */
+}
+
+#right{
+    background-color:tomato;
+    /* width: 15%; */
+    height: 300px;
+    float: left;
+    grid-area: r;
+    /*/* float right: ; cũng dc */*/
+}
+#footer{
+    background-color: turquoise;
+    height: 100px;
+    grid-area: f;
+     /* clear: both;    khi bên trên dùng float thì phải có cái này */
+}

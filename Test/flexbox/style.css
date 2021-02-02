@@ -1,0 +1,36 @@
+*{
+    color: mintcream;
+    font-weight: bolder;
+}
+#one{
+    background-color: plum;
+    width: 150px;
+    height: 50px;
+    flex-grow: 0;
+    order: 2;
+}
+#two{
+    background-color: darkcyan;
+    width: 150px;
+    height: 50px;
+    flex-grow: 1;
+    order: 3;
+
+}
+#three{
+    background-color: maroon;
+    width: 150px;
+    height: 50px;
+    flex-grow: 0;
+    order: 1;
+}
+
+#container{
+    background-color: mistyrose;
+    height: 400px;
+    width: 90%;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: flex-end;
+}

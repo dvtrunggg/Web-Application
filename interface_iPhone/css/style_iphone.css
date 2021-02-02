@@ -1,0 +1,114 @@
+.menu1{
+    background: #323232;
+}
+
+nav a.menu_effect:hover {
+    color: #B8B8B8;
+    text-decoration: none;
+}
+nav a{
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+   
+} 
+.icon_menu{
+    text-align: center;
+}
+nav a.icon_menu_effect:hover {
+    /* color: #a33535; */
+    text-decoration: none;
+}
+
+p.iphoneSE{
+    /* font-size: 60px; */
+    /* font-weight: bold; */
+}
+p.money{
+    font-size: 20px;
+}
+.icon_menu_p:hover{
+    color: blue;
+}
+div.container-menu{
+   padding: 0 200px 0 200px;
+}
+
+img.menu_search:hover{
+    width: 1.5em;
+    height: 1.5em;
+}
+div.jumbotron{
+    background-color: white;
+}
+div.text{
+    /* background-color:rgba(245,245,247,0.7); */
+    padding-top: 50px;
+}
+div.image{
+    padding: 0;
+}
+div.image2{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+
+    
+}
+/* 
+.text_center{
+    text-align: center;
+} */
+
+/* div.card-body>lead{
+    padding: 0;
+} */
+div.line{
+    display: inline;
+}
+.card-text{
+    width: 110%;
+}
+div.phoneList{
+    margin-top: 5em;
+}
+div.mybox{
+    margin-top: 3em;
+}
+.btn-support{
+    border-radius: 8px !important;
+}
+/* .iphone11{
+    padding-top: 1.2em;
+} */
+
+div.card{
+    border: none;
+}
+.buy{
+    padding-top: 22px;
+}
+
+div.phoneList{
+    margin-bottom: 4em;
+}
+div.no_iphone{
+    padding-top: 2em;
+    margin-top: 10em;
+    background-color: #f3f3f4;
+}
+div.inside_no_iphone{
+    background-color: white;
+}
+div.ios14{
+    padding: 0 ;
+}
+p.airpod{
+    font-size : 1.5rem;
+    font-weight : 300;
+    line-height : 1.2;
+}
+div.airpod-box{
+    background-color: white;
+}

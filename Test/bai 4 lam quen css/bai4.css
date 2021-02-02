@@ -1,0 +1,16 @@
+
+#doan1{
+    font-size: 20px;
+    color: rgb(110, 93, 25);
+    font-weight: unset;
+    text-decoration: underline;
+}
+#doan2{
+    font-size: 30px;
+    color: blueviolet;
+    text-decoration: overline;
+}
+dd{
+    font-family: 28px;
+    color: rgb(26, 29, 224);
+}

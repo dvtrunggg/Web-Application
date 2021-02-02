@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website BabyShop</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="index.php">
+                <img src="img/logo.gif" width="519" height="63"/>
+            </a>
+            <div id="login_nav">
+                <form name="frmLogin" action="inc/xlDangNhap.php" method="post" onsubmit="return KiemTraDangNhap()">
+                    Tài khoản: <input name="txtUS" type="text" id="txtUS" size="15" maxlength="20" width="15"/>
+                    Mật khẩu: <input name="txtPS" type="password" id="txtPS" size="15" maxlength="20" width="15"/>
+                    <input type="submit" value="Đăng nhập"/>
+                    <input type="button" value="Đăng ký" onclick="ChuyenTrangDangKy()">
+                </form>
+            </div>
+            <img src="img/header_1.png" width="748"/>
+            <img src="img/header_2.png" width="748"/>
+        </div>
+        <div id="sidebar">
+            <dl>
+                <dt>Hãng sản xuất</dt>
+                <dd>
+                    <a href="#">Revell</a>
+                </dd>
+                <dd>
+                    <a href="#">Lego</a>
+                </dd>
+                <dd>
+                    <a href="#">Lamaze</a>
+                </dd>
+                <dd>
+                    <a href="#">vTech</a>
+                </dd>
+                <dd>
+                    <a href="#">Rastar</a>
+                </dd>
+                <dd>
+                    <a href="#">Syma</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>Loại sản phẩm</dt>
+                <dd>
+                    <a href="#">Thú nhồi bông</a>
+                </dd>
+                <dd>
+                    <a href="#">Đồ chơi nhựa</a>
+                </dd>
+                <dd>
+                    <a href="#">Đồ chơi điện tử</a>
+                </dd>
+                <dd>
+                    <a href="#">Điều kiển từ xa</a>
+                </dd>
+                <dd>
+                    <a href="#">Đồ chơi thông minh</a>
+                </dd>
+            </dl>
+        </div>
+        <div id="content">
+            <h2>Sản phẩm mới nhất</h2>
+            <div class="box">
+                <img src="images/Lego_City_Park_Cafe_3061.jpg"/>
+                <div class="pname">City Park Cafe 3061</div>
+                <div class="pprice">Giá: 950000đ</div>
+                <div class="action">
+                    <a href="#">Chi tiết</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Revell_Lamborghini_Revention.jpeg"/>
+                <div class="pname">Lamborghini Revention</div>
+                <div class="pprice">Giá: 260000đ</div>
+                <div class="action">
+                    <a href="#">Chi tiết</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Lamaze_Bill_D_Beaver.jpeg"/>
+                <div class="pname">Bill D. Beaver</div>
+                <div class="pprice">Giá: 160000đ</div>
+                <div class="action">
+                    <a href="#">Chi tiết</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Lego_Star_Wars.jpg"/>
+                <div class="pname">Star Wars</div>
+                <div class="pprice">Giá: 500000đ</div>
+                <div class="action">
+                    <a href="#">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">&copy; Design by student of FIT - HCMUS</div>
+    </div>
+</body>
+</html>

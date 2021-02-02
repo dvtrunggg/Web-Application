@@ -1,0 +1,40 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+h1{
+    font-family:  "Marko One", Georgia, serif;
+}
+dt{
+    font-weight: bold;
+}
+strong{
+    font-style: italic;
+}
+.newitem{
+    color: tomato;
+    font-style: italic;
+}
+#info{
+    color: teal;
+}
+div#newitem p{
+    color: teal;
+}
+.price{
+    font-family: Georgia, serif;
+    style: italic;
+    color: gray;
+}
+.label{
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: normal;
+}
+.warning{
+    font-size: small;
+    color: red;
+}
+sup{
+    font-size: small;
+    color: red;
+}

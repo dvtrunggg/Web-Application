@@ -1,0 +1,78 @@
+/* CSS Document */
+/* 
+Ho va ten   : Đinh Viết Trung
+MSSV        :   18126035
+*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+nav ul li a{
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    border: red;
+}
+nav ul li a:link, nav ul li a:visited {
+    color: #9A3C3A;
+  }
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+    color: red;
+  }
+a:link, a:visited { color: #DC6903; }
+a:focus, a:hover, a:active { color: #F9AB33; }
+nav li a{
+    display: block;
+    border: 1px solid;
+    border-radius: 0.5em;
+    padding: 0.5em 1em 0.5em 1em ;
+    margin: 0.5em;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    padding-bottom: 0.2em;
+}
+
+#main{
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 16em minmax(20em, 1fr);
+    grid-template-areas: "menu content";
+    height: auto;
+
+}
+#container{
+    height: auto;
+}
+#menu{
+    grid-area: menu;
+    color: red;
+    padding-left: 0.5em;
+}
+#content{
+    grid-area: content;
+}
+hr{
+    border-top:1px dotted gray;
+}
+#know{
+    border: #7A7879 0.5px solid;
+    border-top: #DB3C40 4px solid;
+    padding: 2em 2em 2em 2em;
+}
+#yelow{
+    background-color: #F5BD70;
+    padding: 2em 2em 2em 2em;
+}

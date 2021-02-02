@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1, 2, 3, 4 lap 6</title>
+    <style type="text/css">
+        .tableHeader
+        {
+            background-color: #0099FF;
+            color: #FFF;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .onFocus
+        {
+            background-color: #FCF;
+            color:#390;
+        }
+        .onMouseOver
+        {
+            border-color:#C30;
+            border-width:thin;
+            border-style:solid;
+
+            background-color:#FFC;
+            color:#F00;
+        }
+        .normal
+        {
+            border-color:#B4CFFE;
+            border-bottom-width:thin;
+            border-style:ridge;
+
+            background-color: #FFF;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <form name="frmMain" action="#" method="get" onsubmit="return CheckSubmit()">
+            <table width="300" border="1" cellspacing="0" cellpadding="2" rules="groups" bordercolor="#0099FF">
+                <tr>
+                    <td colspan="4" class="tableHeader" id="idHeader">Login Form</td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="right"></td>
+                </tr>
+                <tr>
+                    <td width="81" align="right" id="idUserName">User name:</td>
+                    <td width="22">&nbsp;</td>
+                    <td width="129">
+                        <input type="text" name="txtUserName" id="txtUsername" class="normal" onfocus="HighLight(this,1)" onblur="HighLight(this,2)" onmouseover="HighLight(this,3)" onmouseout="HightLight(this,2)"/>
+                    </td>
+                    <td width="58">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="right" id="idPassword">Password</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="password" name="txtPassword" id="txtPassword" class="normal" onfocus="HighLight(this,1)" onblur="HighLight(this,2)" onmouseover="HighLight(this,3)" onmouseout="HightLight(this,2)"/>
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="right" id="idLanguage">Language</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <select name="cmdLanguage" id="cmdLanguage" class="normal"onfocus="HighLight(this,1)" onblur="HighLight(this,2)" onmouseover="HighLight(this,3)" onmouseout="HightLight(this,2)" onchange="ChangeLanguage()">
+                            <option selected="selected" id="idEng">English</option>
+                            <option id="idVN">Vietnamese</option>
+                        </select></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center"><hr color="#0099FF" size="1" /></td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center"><input type="submit" name="btnSubmit" id="btnSubmit" value="Login" />
+                    <input type="reset" name="btnClose" id="btnClose" value="Close" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script type="text/Javascript">
+        function HighLight(control, flag)
+        {
+            switch(flag)
+            {
+                case 1:
+                    control.className = "onFocus";
+                    break;
+                case 2:
+                    control.className = "normal";
+                    break;
+                case 3:
+                    control.className = "onMouseOver";
+                    break;
+            }
+        }
+    </script>
+    <script type="text/Javascript">
+        function ChangeLanguage()
+        {
+            var lang = document.getElementById("cmdLanguage");
+            switch(lang.value)
+            {
+                case "Tiếng Anh":
+                    document.getElementById("idHeader").innerHTML = "Login Form";
+                    document.getElementById("idUserName").innerHTML = "User Name";
+                    document.getElementById("idPassword").innerHTML = "Password";
+                    document.getElementById("idLanguage").innerHTML = "Language";
+                    document.getElementById("idEng").innerHTML = "English";
+                    document.getElementById("idVN").innerHTML = "Vietnamese";
+                    document.getElementById("btnSubmit").value = "Login";
+                    document.getElementById("btnClose").value = "Close";
+                    break;
+                case "Vietnamese":
+                    document.getElementById("idHeader").innerHTML = "Khung đăng nhập";
+                    document.getElementById("idUserName").innerHTML = "Tên đăng nhập";
+                    document.getElementById("idPassword").innerHTML = "Mật khẩu";
+                    document.getElementById("idLanguage").innerHTML = "Ngôn ngữ";
+                    document.getElementById("idEng").innerHTML = "Tiếng Anh";
+                    document.getElementById("idVN").innerHTML = "Tiếng Việt";
+                    document.getElementById("btnSubmit").value = "Đăng nhập";
+                    document.getElementById("btnClose").value = "Đóng";
+                    break;
+            }
+        }
+    </script>
+    <script type="text/Javascript">
+        function CheckSubmit(){
+            var username = document.getElementById("txtUsername");
+            if (username.value == "")
+            {
+                alert("Yêu cầu nhập tên đăng nhập!");
+                username.focus();
+                return false;
+            }
+            var password = document.getElementById("txtPassword");
+            if (password.value == "")
+            {
+                alert("Yêu cầu nhập mật khẩu:");
+                password.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

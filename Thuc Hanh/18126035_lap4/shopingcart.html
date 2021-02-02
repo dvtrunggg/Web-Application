@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website BabyShop</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="index.php">
+                <img src="img/logo.gif" width="519" height="63"/>
+            </a>
+            <div id="login_nav">
+                <form name="frmLogin" action="inc/xlDangNhap.php" method="post" onsubmit="return KiemTraDangNhap()">
+                    Tài khoản: <input name="txtUS" type="text" id="txtUS" size="15" maxlength="20" width="15">
+                    Mật khẩu: <input name="txtPS" type="password" id="txtPS" size="15" maxlength="20" width="15"/>
+                    <input type="submit" value="Đăng nhập"/>
+                    <input type="button" value="Đăng ký" onclick="ChuyenTrangDangKy()">
+                </form>
+            </div>
+            <img src="img/header_1.png" width="748"/>
+            <img src="img/header_2.png" width="748"/>
+        </div>
+        <div id="sidebar">
+            <dl>
+                <dt>Hãng sản xuất</dt>
+                <dd>
+                    <a href="#">Revell</a>
+                </dd>
+                <dd>
+                    <a href="#">Lego</a>
+                </dd>
+                <dd>
+                    <a href="#">Lamaze</a>
+                </dd>
+                <dd>
+                    <a href="#">vTech</a>
+                </dd>
+                <dd>
+                    <a href="#">Rastar</a>
+                </dd>
+                <dd>
+                    <a href="#">Syma</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>Loại sản phẩm</dt>
+                <dd>
+                    <a href="#">Thú nhồi bông</a>
+                </dd>
+                <dd>
+                    <a href="#">Đồ chơi nhựa</a>
+                </dd>
+                <dd>
+                    <a href="#">Đồ chơi điện tử</a>
+                </dd>
+                <dd>
+                    <a href="#">Điều kiển từ xa</a>
+                </dd>
+                <dd>
+                    <a href="#">Đồ chơi thông minh</a>
+                </dd>
+            </dl>
+        </div>
+        <div id="content">
+            <div id="quanlygiohang">
+                <h1>Quản lý giỏ hàng</h1>
+                <table>
+                    <tr>
+                        <th width="20">STT</th>
+                        <th>Tên sản phẩm</th>
+                        <th width="60">Hình</th>
+                        <th width="50">Giá</th>
+                        <th width="50">Số lượng</th>
+                        <th width="50">Thao tác</th>
+                    </tr>
+                    <form name="frmGioHang" action="#" method="get">
+                        <tr>
+                            <td>1</td>
+                            <td>Bill D.Beaver</td>
+                            <td align="center"><img src="images/Lamaze_Bill_D_Beaver.jpeg" width="50"/></td>
+                            <td>160000</td>
+                            <td>
+                                <input type="text" name="txtSL" value="1" width="45" size="5"/>
+                                <input type="hidden" name="hdViTri" value="0"/>
+                            </td>
+                            <td>
+                                <input type="submit" value="Cập nhật số lượng"/>
+                            </td>
+                        </tr>
+                    </form>
+
+                    <form name="frmGioHang" action="#" method="get">
+                        <tr>
+                            <td>2</td>
+                            <td>Freddie the Firefly</td>
+                            <td align="center">
+                                <img src="images/Lamaze_Freddie_Firefly.jpeg" width="50"/>
+                            </td>
+                            <td>300000</td>
+                            <td>
+                                <input type="text" name="txtSL" value="1" width="45" size="5"/>
+                                <input type="hidden" name="hdViTri" value="1"/>
+                            </td>
+                            <td>
+                                <input type="submit" value="Cập nhật số lượng"/>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+                <div class="pprice">
+                    Tổng thành tiền: 460000 đ
+                </div>
+                <a href="#">
+                    <img src="img/dathang.png" width="100"/>
+                </a>
+            </div>
+        </div>
+        <div id="footer">&copy; Design by student of FIT - HCMUS</div>
+    </div>
+</body>
+</html>

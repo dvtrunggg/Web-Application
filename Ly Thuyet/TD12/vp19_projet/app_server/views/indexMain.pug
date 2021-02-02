@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+
+  body
+    block content
+
+    nav.navbar.navbar-expand-sm.bg-dark.navbar-dark
+        a.navbar-brand(href="http://localhost:3000/") 19VP
+        ul.navbar-nav
+            li.nav-item
+                a.nav-link(href="http://localhost:3000") Home
+            li.nav-item
+                a.nav-link(href="http://localhost:3000/student") Student
+            li.nav-item
+                a.nav-link(href="http://localhost:3000/about") About
+
+
+
+    h1.center STUDENT LIST 19VP
+    
+    div.content
+        table.table.table-bordered
+            thead
+                tr
+                    th Name 
+                    th ID 
+                    th Email
+                    th Hometown
+                    th Phone
+                    
+            tbody
+                    tr
+                        td Đinh Viết Trung 
+                        td 18126035
+                        td 18126035@student.hcmus.edu.vn
+                        td TP.HCM
+                        td 05123456789
+                        
+                    tr
+                        td Nguyễn Sang 
+                        td 18126029
+                        td 18126029@student.hcmus.edu.vn
+                        td TP.HCM
+                        td 01232456789
+                    tr
+                        td Lê Thị Anh Thi 
+                        td 18126033
+                        td 18126033@student.hcmus.edu.vn
+                        td TP.HCM
+                        td 01234456789
+                    tr
+                        td Trần Thị Ngọc Huyền 
+                        td 18126017
+                        td 18126017@student.hcmus.edu.vn
+                        td TP.HCM
+                        td 01234656789
+                    tr
+                        td Huỳnh Ngọc An 
+                        td 18126012
+                        td 18126012@student.hcmus.edu.vn
+                        td TP.HCM
+                        td 01234156789
+                    tr
+                        td Đoàn Nam Thuận 
+                        td 18126033
+                        td 18126033@student.hcmus.edu.vn
+                        td TP.HCM
+                        td 01234566789
+            
+        

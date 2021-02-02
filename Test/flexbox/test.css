@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* #container{
+    display: flex;
+    flex-direction: column;
+} */
+div#header{
+    display: flex;
+    flex-direction: row;
+    background-image: url(img/abstract-colorful-flow-shapes-background_23-2148258092.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+#two{
+    margin-left: 80px;
+}
+a{
+    text-decoration: none;
+}
+div#two{
+   border: green solid 1px;
+   text-align: center; 
+   width: 150px;
+   height: 50px;
+   background-color: lightcoral;
+}
+div#two p{
+    color: white;
+    font-weight: bold;
+
+}
+div#content{
+    background-color: teal;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+}
+div.sp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+img{
+    border-radius: 50%;
+}
+

@@ -1,0 +1,49 @@
+
+
+#div1{
+    width: 400px;
+    background-color: wheat ;
+    height: 200px;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    left: 200px;
+    top: 200px;
+    background-repeat: repeat-x;
+
+}
+
+#div2 {
+    width: 400px;
+    background-color: rgb(29, 154, 199);
+    height: 400px;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    left: 200px;
+    top: 100px;
+    z-index: 50;
+    
+    border-radius: 50%;
+    border-left:yellow;
+   
+}
+#div3 {
+    width: 500px;
+    background-color: rgb(38, 226, 21);
+    height: 150px;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    left: 400px;
+    top: 100px;
+    z-index: 3;
+    
+}
+p {
+    color: brown;
+    font-weight: bold ;
+}

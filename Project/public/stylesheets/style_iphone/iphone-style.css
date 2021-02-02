@@ -1,0 +1,287 @@
+
+ul{
+    list-style-type: none;
+}
+
+.icon_menu{
+    text-align: center;
+}
+nav a.icon_menu_effect:hover {
+    /* color: #a33535; */
+    text-decoration: none;
+}
+
+
+p.money{
+    font-size: 20px;
+}
+.icon_menu_p:hover{
+    color: blue;
+}
+div.container-menu{
+   padding: 0 200px 0 200px;
+}
+
+img.menu_search:hover{
+    width: 1.5em;
+    height: 1.5em;
+}
+div.jumbotron{
+    background-color: white;
+}
+div.text{
+    /* background-color:rgba(245,245,247,0.7); */
+    padding-top: 50px;
+}
+div.image{
+    padding: 0;
+}
+div.image2{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+
+    
+}
+/* 
+.text_center{
+    text-align: center;
+} */
+
+/* div.card-body>lead{
+    padding: 0;
+} */
+div.line{
+    display: inline;
+}
+.card-text{
+    width: 110%;
+}
+div.phoneList{
+    margin-top: 5em;
+}
+div.mybox{
+    margin-top: 3em;
+}
+.btn-support{
+    border-radius: 8px !important;
+}
+/* .iphone11{
+    padding-top: 1.2em;
+} */
+
+div.card{
+    border: none;
+}
+.buy{
+    padding-top: 22px;
+}
+
+div.phoneList{
+    margin-bottom: 4em;
+}
+div.no_iphone{
+    padding-top: 2em;
+    margin-top: 10em;
+    background-color: #f3f3f4;
+}
+div.inside_no_iphone{
+    background-color: white;
+}
+div.ios14{
+    padding: 0 ;
+}
+p.airpod{
+    font-size : 1.5rem;
+    font-weight : 300;
+    line-height : 1.2;
+}
+div.airpod-box{
+    background-color: white;
+}
+
+
+/* ----------------------------------------- */
+
+/*site-menu*/
+
+/* apple menu */
+
+.apple-menu {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.apple-menu nav {
+    height: 44px;
+    background: #323232;
+    font-weight:normal;
+    -webkit-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    text-size-adjust:100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.apple-menu nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.apple-menu nav a {
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.apple-menu nav a.active {
+    color: #949494;
+}
+
+.apple-menu nav a:hover {
+    color: #B8B8B8;
+}
+
+.logo {
+    margin-top: -7px;
+    height: 20px;
+}
+
+.search-icon {
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+    height: 20px;
+    width: auto;
+    margin-top: -5px;
+}
+
+.bag-icon {
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+    height: 20px;
+    width: auto;
+    margin-top: -7px;
+}
+
+.search-icon:hover, .bag-icon:hover {
+    filter: invert(70%) sepia(45%) saturate(0%) hue-rotate(260deg) brightness(99%) contrast(85%);
+    transition: 0.3s;
+}
+
+.logo:hover {
+    filter: invert(78%) sepia(0%) saturate(1327%) hue-rotate(316deg) brightness(400%) contrast(84%);
+    transition: 0.3s;
+}
+
+/* iphone menu */
+
+.iphone-menu {
+    /*margin-left: 30%;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+}
+
+
+.item-menu {
+    padding-left: 65px;
+    color: black;
+    text-align: center;
+}
+
+.item-menu img {
+    width: auto;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.item-menu img.iphone11-pro {
+    width: 42px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.item-menu img.iphonese {
+    width: 20px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+/*site main */
+
+.site-main {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+
+/* Buy button */
+.btn {
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+
+/* iphone section */
+.iphone-section {
+    margin-bottom: 150px;
+}
+
+.iphone-section .disc {
+    font-size: 55px;
+    font-weight: 649;
+    line-height: 100%;
+}
+
+.iphone-section h1 {
+    font-size: 30px;
+    font-weight: 645;
+}
+
+
+
+#iphonexr-section img.iphonexr {
+    width: 500px;
+    height: auto;
+    margin-top: -80px;
+}
+
+/* compare section */
+
+.compare-section h1{
+    font-size: 50px;
+}
+
+.compare-section .price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.compare-section .btn {
+    font-size: 16px;
+}
+
+/* site-footer */
+
+.site-footer  {
+    background-color: #f2f2f2;
+    padding: 15px 60px 30px 60px;
+    border-top: 1px solid #c0bfc1;
+    color: grey;
+    font-size: 13px;
+}

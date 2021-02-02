@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        Table Test
+    </head>
+
+    <body>
+        <p>
+            <h1>đây là demo table bình thường</h1>
+            <br/>// dùng p khi đoạn này là văn bản
+            <br/>// trong phần <i>table: (table border = "value" cellpadding = "value" cellspacing = "value")</i>
+            <br/> <i>border</i> để chỉ định độ dày của đường line vẽ ra table ( cái khung ngoài cùng)
+            <br/>//cellpadding : khoảng cách giữa chữ và bảng ( căn lè á)
+            <br/>//cellspacing: chỉ định độ dầy của đường biên 
+            <br/>// tính = pexel
+        </p>
+        <table border="2" cellpadding="20" cellspacing = "5">
+        <tr>
+            <td>Hang 1 Cot 1</td>
+            <td>Hang 1 Cot 2</td>
+            <td>Hang 1 Cot 3</td>
+        </tr>
+        <tr>
+            <td>Hang 2 Cot 1</td>
+            <td>Hang 2 Cot 2</td>
+            <td>Hang 2 Cot 3</td>
+        </tr>
+        <tr>
+            <td>Hang 3 Cot 1</td>
+            <td>Hang 3 Cot 2</td>
+            <td>Hang 3 Cot 3</td>
+        </tr>
+        <td>test</td>
+        <td>test</td>
+        </table>
+        <h1>Đây là demo table trộn</h1>
+        <p>
+            td colspan = "2" nghĩa là gộp 2 ô trên 1 dòng vào thành 1 ô
+            <br/> td rowsan = "3" Nghĩa là gộp 3 ô trên 1 cột thành 1 ô
+        </p>
+        <table border="2" cellpadding="20" cellspacing = "5">
+            <tr>
+                <td colspan="2">Hàng 1 Cột 1</td>
+                <td>Hàng 1 cột 2</td>
+            </tr>
+            <tr>
+                <td>Hang 2 Cot 1</td>
+                <td>Hang 2 Cot 2</td>
+                <td rowspan="2">Hang 2 Cot 3</td>
+            </tr>
+            <tr>
+                <td>Hang 3 Cot 1</td>
+                <td>Hang 3 Cot 2</td>
+                
+            </tr>
+            </table>
+            <p>audio</p>
+            <audio autoplay = "0" controls>
+                <source src = "test.mp3" type ="audio/mpeg">
+            </audio>
+    </body>
+</html>

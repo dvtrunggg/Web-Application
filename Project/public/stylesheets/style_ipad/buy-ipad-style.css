@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+/* site-menu */
+
+/* apple menu */
+
+.apple-menu {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.apple-menu nav {
+    height: 44px;
+    background: #323232;
+    font-weight:normal;
+    -webkit-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    text-size-adjust:100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.apple-menu nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.apple-menu nav a {
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.apple-menu nav a:hover {
+    color: #B8B8B8;
+}
+
+.logo {
+    margin-top: -7px;
+    height: 20px;
+}
+
+.search-icon {
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+    height: 20px;
+    width: auto;
+    margin-top: -5px;
+}
+
+.bag-icon {
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+    height: 20px;
+    width: auto;
+    margin-top: -7px;
+}
+
+.search-icon:hover, .bag-icon:hover {
+    filter: invert(70%) sepia(45%) saturate(0%) hue-rotate(260deg) brightness(99%) contrast(85%);
+    transition: 0.3s;
+}
+
+.logo:hover {
+    filter: invert(78%) sepia(0%) saturate(1327%) hue-rotate(316deg) brightness(400%) contrast(84%);
+    transition: 0.3s;
+}
+
+/* site header */
+
+.site-header{
+    border-bottom: 1px #d8d8d8 solid;
+    background-color: white;
+}
+
+.site-header .row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    padding-left: 170px;
+    padding-right: 170px;
+    margin: 0px;
+}
+
+
+/* site-main */
+
+.site-main {            /*Zoom out */
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+
+/* Product cart */
+.product_cart {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.cart {
+    margin: 0px;
+    padding-left: 100px;
+    padding-top: 80px;
+}
+
+.cart .row {
+    margin: 0px;
+}
+
+.name_cart {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.box-big {
+    border: 1px solid #c0bfc1;
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.box-small {
+    border: 1px solid #c0bfc1;
+    border-radius: 4px;
+    height: 100px;
+    line-height: 90%;
+    padding-top: 25px;
+    cursor: pointer;
+}
+
+.box-big:hover, .box-small:hover {
+    border-color: #565557;
+}
+
+.change_border {
+    border: 1.5px solid #1e81d1;
+}
+
+.left {
+    margin-left: -15px;
+}
+
+.right {
+    margin-right: -15px;
+}
+
+.addToBag {
+    width: 450px;
+    height: 40px;
+    font-size: larger;
+    border: solid 1px #0070c9;
+    background-color: #0070c9;
+    background: linear-gradient(#42a1ec,#0070c9);
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+    color: #323232;
+}
+
+.desc {
+    font-size: 13px;
+}
+
+.desc-storage {
+    margin-top: -13px;
+}
+
+.price {
+    font-size: 30px;
+}
+
+
+    /* Collapse */
+
+.card, .card-header {
+    border: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card {
+    border-bottom: 1px solid #c0bfc1; 
+    padding: 20px 0px 30px 0px;
+    pointer-events: auto;
+}
+
+
+.cart-remove-border {
+    border: none;
+}
+
+.card-body {
+    padding: 0px 0px;
+}
+
+.card-header {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    background-color: white;
+    pointer-events: none;
+}
+
+.card-header p {
+    padding-left: 0px;
+}
+
+.card-header-selected-first {
+    border-top: 1px solid #c0bfc1; 
+}
+
+.card-header-selected {
+    padding-left: 0px;
+    padding-right: 0px;
+    pointer-events: auto;
+}
+
+.card-selected {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.para-selected {
+    font-size: 25px;
+}
+
+.para-selected:hover {
+    color: #0070c9;
+}
+
+.card-link p {
+    display: inline-block;
+}
+
+#change-button {
+    padding-top: 8px;
+}
+
+#change-button:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Apple pencil */
+
+.accessories {
+    margin: 150px 100px 80px 100px;
+    background-color:	#fafafa;
+}
+
+.name_accessories {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.image_product img{ 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px; 
+}
+
+
+/* site-footer */
+
+.site-footer  {
+    background-color: #f2f2f2;
+    padding: 15px 60px 30px 60px;
+    border-top: 1px solid #c0bfc1;
+    color: grey;
+    font-size: 13px;
+}
